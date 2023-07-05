@@ -3,7 +3,6 @@
 	padding: 0;
 }
 
-
 body{
 
 	font-family: arial;
@@ -14,7 +13,6 @@ body{
 
 }
 
-
 .container-app{
 
 	width: 70%;
@@ -23,14 +21,128 @@ body{
 
 }
 
+.container-app .controls-btns{
+
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	right: 0;
+
+}
+
+.container-app .controls-btns .btn{
+
+	width: 40%;
+	padding: 4% 0;
+	border-radius: .2vw;
+	cursor: pointer;
+	margin: 0 2%;
+
+}
+
+.container-app .controls-btns .btn.b-fir{
+
+	background: #2196F3;
+	border: .2vw solid #2196F3;
+
+}
+
+.container-app .controls-btns .btn.b-sec{
+
+	background: #E91E63;
+	border: .2vw solid #E91E63;
+
+}
+
+.container-app .controls-btns .btn.b-thr{
+
+	background: #FF9800;
+	border: .2vw solid #FF9800;
+
+}
+
+
+.container-app .controls-btns .btn.inactive-hist{
+
+	background: transparent;
+
+}
+
+.container-app .indicators{
+
+	width: 18%;
+	position: absolute;
+	right: -19%;
+	top: 15%;
+	color: white;
+
+}
+
 .container-app .title{
 
-	font-size: 2.5vw;
-	padding: 1% 0;
+	font-size: 2.7vw;
+	padding: 2% 0;
 	padding-top: 0%;
 	text-align: center;
 	width: 100%;
 	color: white;
+
+}
+
+.container-app .indicators{
+
+	width: 18%;
+	position: absolute;
+	right: -19%;
+	top: 15%;
+	color: white;
+
+}
+
+.container-app .indicators .item{
+
+	width: 100%;
+	padding: 4% 0;
+	display: flex;
+	align-items: center;
+
+}
+
+.container-app .indicators .item .title{
+
+	font-size: 1.4vw;
+	text-align: right;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+}
+
+.container-app .indicators .item .ind{
+
+	width: 12%;
+	padding: 5% 0;
+	margin-left: 5%;
+	border-radius: 100%;
+
+}
+
+.container-app .indicators .item.it-fir .ind{
+
+	background: #2196F3;
+
+}
+.container-app .indicators .item.it-sec .ind{
+
+	background: #E91E63;
+
+}
+.container-app .indicators .item.it-thr .ind{
+
+	background: #FF9800;
 
 }
 
@@ -76,7 +188,7 @@ body{
 .container-app .content .ctn .axe-y .numbers .axe-sect{
 
 	height: 16.7%;
-	margin-left: -10%;
+	margin-left: -75%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -128,7 +240,7 @@ body{
 	width: 96.5%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	position: absolute;
 	right: -.5%;
 	bottom: -5%;
@@ -141,7 +253,7 @@ body{
 
 	width: 8%;
 	text-align: center;
-
+	margin: 0 1%;
 }
 
 
@@ -154,7 +266,7 @@ body{
 	top: 7%;
 	display: flex;
 	align-items: flex-end;
-	justify-content: space-between;
+	justify-content: center;
 
 }
 
@@ -163,7 +275,6 @@ body{
 	width: 8%;
 	border-radius: .2vw;
 	animation: histAnim .8s;
-
 }
 
 .container-app .content .ctn .hist-container .hist-flex{
@@ -173,6 +284,7 @@ body{
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-around;
+	margin: 0 1%;
 
 }
 
@@ -210,145 +322,6 @@ body{
 	}
 
 }
-
-.container-app .content .ctn .separator{
-
-	width: 96.5%;
-	padding: 1% 0;
-	position: absolute;
-	right: -.5%;
-	bottom: 5%;
-	z-index: 5;
-	display: flex;
-	align-items: center;
-
-}
-
-.container-app .content .ctn .separator .sprs{
-
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	display: flex;
-	align-items: flex-end;
-
-}
-
-
-.container-app .content .ctn .separator .sprs div{
-
-	width: 8.5%;
-	height: 40%;
-	border-right: .1vw solid white;
-
-}
-
-
-.container-app .controls-btns{
-
-	width: 20%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	position: absolute;
-	right: 0;
-
-}
-
-.container-app .controls-btns .btn{
-
-	width: 30%;
-	padding: 4% 0;
-	border-radius: .2vw;
-	cursor: pointer;
-
-}
-
-.container-app .controls-btns .btn.b-fir{
-
-	background: #2196F3;
-	border: .2vw solid #2196F3;
-
-}
-
-.container-app .controls-btns .btn.b-sec{
-
-	background: #E91E63;
-	border: .2vw solid #E91E63;
-
-}
-
-.container-app .controls-btns .btn.b-thr{
-
-	background: #FF9800;
-	border: .2vw solid #FF9800;
-
-}
-
-
-.container-app .controls-btns .btn.inactive-hist{
-
-	background: transparent;
-
-}
-
-.container-app .indicators{
-
-	width: 18%;
-	position: absolute;
-	right: -19%;
-	top: 15%;
-	color: white;
-
-}
-
-.container-app .indicators .item{
-
-	width: 100%;
-	padding: 4% 0;
-	display: flex;
-	align-items: center;
-
-}
-
-.container-app .indicators .item .title{
-
-	font-size: 1.4vw;
-	text-align: right;
-	width: 100%;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-
-}
-
-.container-app .indicators .item .ind{
-
-	width: 12%;
-	padding: 5.5% 0;
-	margin-left: 5%;
-	border-radius: 100%;
-
-}
-
-.container-app .indicators .item.it-fir .ind{
-
-	background: #2196F3;
-
-}
-.container-app .indicators .item.it-sec .ind{
-
-	background: #E91E63;
-
-}
-.container-app .indicators .item.it-thr .ind{
-
-	background: #FF9800;
-
-}
-
-
-
 
 
 
