@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+body{
+
+	font-family: arial;
+
+}
+
+
+.container-app{
+
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+}
+
+.container-app .cover-page{
+
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+
+.container-app .cover-page .content{
+
+	width: 100%;
+	height: 100%;
+	background-color: #0000009e;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.container-app .cover-page .content .title{
+
+	text-align: center;
+	color: white;
+
+}
+
+.container-app .cover-page .content .title p{
+	
+	margin-bottom: 1%;
+	font-size: 4vw;
+	padding: 0 8%;
+	font-family: 'Kalam', cursive;
+
+}
+
+.container-app .content .title .buttons button{
+
+	width: 16%;
+	font-size: 1.4vw;
+	padding: 1.3% 0;
+	background-color: #FF9800;
+	border: .1vw solid transparent;
+	cursor: pointer;
+	transition: background-color .3s;
+	text-transform: uppercase;
+
+}
+
+.container-app .content .title .buttons button:active{
+
+	scale: .98;
+
+}
+
+
+.container-app .content .title .buttons button.bg-trsp{
+
+	background-color: transparent;
+	border-color: #FF9800;
+	color: #FF9800;
+
+}
+
+.container-app .content .title .buttons button.bg-trsp:hover{
+
+	background-color: #ff980033;
+
+}
+
+
+.container-app .nav-bar{
+
+	width: 100%;
+	position: absolute;
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: white;
+
+}
+
+.container-app .nav-bar .menu{
+
+	width: 30%;
+	display: flex;
+	align-items: center;
+
+}
+
+.container-app .nav-bar .menu .item{
+
+	margin-right: 6%;
+	font-size: 1.4vw;
+	transition: .2s;
+	cursor: pointer;
+
+}
+
+.container-app .nav-bar .menu .item:hover{
+
+	color: #FF9800;
+	scale: 1.3;
+
+}
+
+.container-app .nav-bar .logo{
+
+	font-size: 3vw;
+	padding: 2% 5%;
+	font-family: 'Chela One', cursive;
+
+}
+
+
+.container-app .side-bar{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 6;
+	text-align: center;
+	transition: .3s;
+	opacity: 0;
+	pointer-events: none;
+
+}
+
+.container-app .side-bar .title{
+
+	font-size: 9vw;
+	color: white;
+	font-family: 'Chela One', cursive;
+	margin-top: 15%;
+
+}
+
+.container-app .side-bar input{
+
+	width: 80%;
+	background-color: transparent;
+	color: white;
+	border: .1vw solid white;
+	padding: 4%;
+	border-radius: 1.5vw;
+	font-size: 4vw;
+	margin-top: 17%;
+
+}
+
+.container-app .side-bar button{
+
+	width: 80%;
+	background-color: #FF9800;
+	border: .1vw solid #FF9800;
+	padding: 3% 4%;
+	border-radius: 1.5vw;
+	font-size: 4.6vw;
+	margin-top: 5%;
+	cursor: pointer;
+
+}
+
+.container-app .side-bar button:active{
+
+	scale: .98;
+
+}
+
+
+.container-app .side-bar .menu{
+
+	color: white;
+	width: 100%;
+	margin-top: 7%;
+
+}
+
+.container-app .side-bar .menu .item{
+
+	font-size: 6vw;
+	padding: 7% 0;
+	transition: .3s;
+
+}
+
+.container-app .side-bar .menu .item:hover{
+
+	color: #FF9800;
+	scale: 1.2;
+
+}
+
+.container-app .menu-btn{
+
+	position: absolute;
+	top: 4%;
+	right: 6%;
+	font-size: 8vw;
+	color: white;
+	z-index: 8;
+	display: none;
+
+}
+
+
+
+@media (max-width:480px){
+
+	.container-app .nav-bar .logo {
+	    font-size: 8vw;
+	    padding: 5% 7%;
+	}
+	.container-app .nav-bar .menu{
+
+		display: none;
+
+	}
+	.container-app .cover-page .content .title p{
+
+		font-size: 7vw;
+
+	}
+
+	.container-app .content .title .buttons button{
+
+		width: 32%;
+	    font-size: 4vw;
+	    padding: 3% 0;
+
+	}
+	.container-app .side-bar{
+	
+		display: block;
+
+	}
+
+	.container-app .menu-btn{
+
+		display: block;
+
+	}
+
+
+}
